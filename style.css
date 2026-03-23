@@ -153,6 +153,7 @@ img {
   margin-bottom: 28px;
 }
 
+*/
 .btn-demo {
   background: transparent;
   color: var(--white);
@@ -171,7 +172,6 @@ img {
   background: var(--white);
   color: var(--orange);
 }
-*/
 
 .hero {
   background-color: #E34926;
