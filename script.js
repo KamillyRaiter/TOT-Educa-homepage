@@ -1,13 +1,5 @@
-// ===========================
-// TOT Educação Corporativa
-// script.js
-// ===========================
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  // -------------------------
-  // Courses Carousel
-  // -------------------------
   const track = document.getElementById('coursesTrack');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
@@ -51,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Re-check on resize
     window.addEventListener('resize', () => {
       currentIndex = Math.min(currentIndex, maxIndex());
       updateCarousel();
@@ -60,10 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel();
   }
 
-
-  // -------------------------
-  // Logo scroller (duplicate items for infinite loop)
-  // -------------------------
   const logosTrack = document.querySelector('.logos-track');
 
   if (logosTrack) {
@@ -71,10 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     logosTrack.innerHTML += clone;
   }
 
-
-  // -------------------------
-  // Smooth scroll for anchor links
-  // -------------------------
   document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     link.addEventListener('click', e => {
@@ -94,10 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
 
-
-  // -------------------------
-  // Sticky header shadow on scroll
-  // -------------------------
   const header = document.querySelector('.header');
 
   if (header) {
@@ -114,10 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
-
-  // -------------------------
-  // Scroll-in animation
-  // -------------------------
   const animateEls = document.querySelectorAll(
     '.stat-card, .solution-card, .course-card, .form-card, .material-inner'
   );
@@ -151,10 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
 
-
-  // -------------------------
-  // Form submit feedback
-  // -------------------------
   document.querySelectorAll('.contact-form').forEach(form => {
 
     form.addEventListener('submit', e => {
